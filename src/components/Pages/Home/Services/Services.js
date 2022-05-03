@@ -1,17 +1,30 @@
 import React from "react";
-import { experimentalStyled as styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Container } from "@mui/material";
+import Service from "../Service/Service";
+import fluoride from "../../../../images/fluoride.png";
+import cavity from "../../../../images/cavity.png";
+import whitening from "../../../../images/whitening.png";
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(2),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
+const services = [
+  {
+    name: "Fluride Treatment", 
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap ", 
+    img:fluoride
+  }, 
+  {
+    name : "Cavity Filling",
+    description: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries has been the industry's standard dummy ",
+    img: cavity
+  },
+  {
+    name :"Teeth Whitening",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap ",
+    img : whitening
+  }
+]
+
 
 const Services = () => {
   return (
@@ -23,11 +36,12 @@ const Services = () => {
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          {Array.from(Array(6)).map((_, index) => (
-            <Grid item xs={2} sm={4} md={4} key={index}>
-              <Item>xs=2</Item>
-            </Grid>
-          ))}
+          {
+            services.map(service => <Service
+                                      key={service.name}
+                                      service={service}
+                                     > </Service>)
+          }
         </Grid>
        </Container>
       </Box>

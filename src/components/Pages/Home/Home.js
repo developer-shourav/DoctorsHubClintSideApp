@@ -5,9 +5,8 @@ const Home = () => {
     return (
         <div>
             <Navigation> </Navigation>
-            <img src="https://thumbs.gfycat.com/ConventionalOblongFairybluebird-max-1mb.gif" alt="" />
-            
             <Services> </Services>
+            <img src="https://thumbs.gfycat.com/ConventionalOblongFairybluebird-max-1mb.gif" alt="" />
         </div>
     );
 };
