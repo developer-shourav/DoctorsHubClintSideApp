@@ -1,10 +1,11 @@
 import React from 'react';
-
+import Navigation from '../Shared/Navigation/Navigation';
 const Home = () => {
     return (
         <div>
-            <h2>This is home</h2>
+            <Navigation> </Navigation>
             <img src="https://thumbs.gfycat.com/ConventionalOblongFairybluebird-max-1mb.gif" alt="" />
+            
         </div>
     );
 };
