@@ -9,23 +9,26 @@ const Service = (props) => {
   const { name, description, img } = props.service;
   return (
     <Grid item xs={2} sm={4} md={4}>
-      <Card sx={{ minWidth: 275, border:0, boxShadow: 0 }}>
-      <CardMedia
-            component="img"
-            style={{width:'auto', height:"80px", margin:"20px auto 5px auto"}}
-            image={img}
-            alt="Dental Service"
-          />
+      <Card sx={{ minWidth: 275, border: 0, boxShadow: 0 }}>
+        <CardMedia
+          component="img"
+          style={{
+            width: "auto",
+            height: "80px",
+            margin: "20px auto 5px auto",
+          }}
+          image={img}
+          alt="Dental Service"
+        />
         <CardContent>
-         
-          
           <Typography variant="h5" component="div">
             {name}
           </Typography>
 
-          <Typography variant="body2" color="text.secondary">{description}</Typography>
+          <Typography variant="body2" color="text.secondary">
+            {description}
+          </Typography>
         </CardContent>
-        
       </Card>
     </Grid>
   );

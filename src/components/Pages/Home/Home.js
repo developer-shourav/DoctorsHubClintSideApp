@@ -6,7 +6,7 @@ const Home = () => {
         <div>
             <Navigation> </Navigation>
             <Services> </Services>
-            <img src="https://thumbs.gfycat.com/ConventionalOblongFairybluebird-max-1mb.gif" alt="" />
+          {/*   <img src="https://thumbs.gfycat.com/ConventionalOblongFairybluebird-max-1mb.gif" alt="" /> */}
         </div>
     );
 };
