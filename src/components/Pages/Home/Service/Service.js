@@ -16,7 +16,7 @@ const Service = (props) => {
       <Card sx={{ minWidth: 275, border: 0, boxShadow: 0 }}>
         <CardMedia
           component="img"
-          style={{width: "auto",height: "85px", margin: "20px auto 10px auto",}}image={img}alt="Dental Service"/>
+          style={{width: "auto",height: "80px", margin: "20px auto 5px auto",}}image={img}alt="Dental Service"/>
         <CardContent>
           <Typography variant="h5" sx={{fontWeight:"regular"}} component="div">
             {name}
