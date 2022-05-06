@@ -29,7 +29,7 @@ const Banner = () => {
             Your New Smile <br/>
             Starts Here
          </Typography>
-         <Typography variant='h6' sx={{fontSize:13, color:'gray', fontWeight:"300"}}> 
+         <Typography variant='h6' sx={{fontSize:13, my:3,  color:'gray', fontWeight:"300"}}> 
              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel reiciendis magnam tenetur optio ducimus a nemo, libero ea reprehenderit tempore.
          </Typography>
          <Button style={{backgroundColor:"rgb(25 211 176)"}} variant='contained'>Get Appiontment</Button> 
