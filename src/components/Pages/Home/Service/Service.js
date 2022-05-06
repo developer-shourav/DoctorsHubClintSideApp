@@ -18,7 +18,7 @@ const Service = (props) => {
           component="img"
           style={{width: "auto",height: "80px", margin: "20px auto 5px auto",}}image={img}alt="Dental Service"/>
         <CardContent>
-          <Typography variant="h5" sx={{fontWeight:"regular"}} component="div">
+          <Typography variant="h5" sx={{fontWeight:"medium"}} component="div">
             {name}
           </Typography>
 
