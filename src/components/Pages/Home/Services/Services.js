@@ -34,7 +34,7 @@ const Services = () => {
          <Typography variant="h6" sx={{fontWeight:500, color:'success.main', m:2 }} component="div"> 
               OUR SERVICES
          </Typography>
-         <Typography variant="h4" component="div" sx={{fontWeight:600, m:2 }}> 
+         <Typography variant="h4" component="div" sx={{fontWeight:"600", m:2 }}> 
             Services We Provide
            
          </Typography>

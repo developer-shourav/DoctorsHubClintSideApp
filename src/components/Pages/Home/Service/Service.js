@@ -5,21 +5,18 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 
+
+
+
+
 const Service = (props) => {
   const { name, description, img } = props.service;
   return (
-    <Grid item xs={2} sm={4} md={4}>
+    <Grid item  sm={4} md={4} xs={2}>
       <Card sx={{ minWidth: 275, border: 0, boxShadow: 0 }}>
         <CardMedia
           component="img"
-          style={{
-            width: "auto",
-            height: "80px",
-            margin: "20px auto 5px auto",
-          }}
-          image={img}
-          alt="Dental Service"
-        />
+          style={{width: "auto",height: "80px", margin: "20px auto 5px auto",}}image={img}alt="Dental Service"/>
         <CardContent>
           <Typography variant="h5" component="div">
             {name}
@@ -33,5 +30,8 @@ const Service = (props) => {
     </Grid>
   );
 };
+
+
+
 
 export default Service;
