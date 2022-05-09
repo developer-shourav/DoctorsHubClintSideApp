@@ -1,31 +1,48 @@
 import React from 'react';
-import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import chair from "../../../../images/chair.png";
 import bg from "../../../../images/bg.png";
-import { Button, Typography } from '@mui/material';
+import { Button, Container, Typography } from '@mui/material';
+import { Box } from '@mui/system';
 
+
+const bannerBg = {
+    background: `url(${bg})`,
+  
+
+}
+
+const verticalCenter = {
+    display: "flex",
+    height:"450px",
+    alignItems:"center"
+}
 
 const Banner = () => {
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Container sx={{ flexGrow: 1 }} style={bannerBg}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={5}>
-         <Typography variant='h4'> 
+
+        <Grid item style={{...verticalCenter,textAlign:"left"}} xs={12} md={6}>
+         <Box> 
+         <Typography variant='h3'> 
             Your New Smile <br/>
             Starts Here
          </Typography>
-         <Typography variant='h6' sx={{fontSize:14, color:'gray', fontWeight:"300"}}> 
+         <Typography variant='h6' sx={{fontSize:13, my:3,  color:'gray', fontWeight:"300"}}> 
              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel reiciendis magnam tenetur optio ducimus a nemo, libero ea reprehenderit tempore.
          </Typography>
-         <Button variant='contained'>Get Appiontment</Button> 
+         <Button style={{backgroundColor:"rgb(25 211 176)"}} variant='contained'>Get Appiontment</Button> 
+         </Box>
         </Grid>
-        <Grid item xs={12} md={7}>
-          <img src={chair} alt="" />
+
+
+        <Grid item xs={12} md={6} style={verticalCenter}>
+          <img style={{width:"350px"}} src={chair} alt="" />
         </Grid>
         
       </Grid>
-    </Box>
+    </Container>
     );
 };
 
